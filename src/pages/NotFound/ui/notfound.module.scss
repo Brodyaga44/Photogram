@@ -1,5 +1,5 @@
-@import "/src/app/styles/utils/variables";
-@import "/src/app/styles/utils/media";
+@import "@/app/styles/utils/variables";
+@import "@/app/styles/utils/media";
 
 .notfound {
   position: fixed;
@@ -10,4 +10,5 @@
   width: 100%;
   color: $red;
   font-size: 24px;
+  font-family: $font;
 }

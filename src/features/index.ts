@@ -1,2 +1,4 @@
 import TestFeature from "./TestFeature/TestFeature.tsx";
-export { TestFeature };
+
+import UserHeader from "@/features/UserHeader/ui/UserHeader.tsx";
+export { TestFeature, UserHeader };
