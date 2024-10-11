@@ -13,16 +13,30 @@
     display: flex;
     gap: 2vw;
   }
-  &__photoContainer {
-    height: 90px;
+  &__photoBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(purple,orange);
+    clip-path: circle(48%);
     width: 90px;
+    height: 90px;
 
   }
+  &__photoContainer {
+
+    height: 75px;
+    width: 75px;
+  }
   &__photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 60px;
+    outline: 2px solid white;
   }
   &__activity {
     display: flex;

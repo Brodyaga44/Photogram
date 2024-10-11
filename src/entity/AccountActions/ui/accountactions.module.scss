@@ -1,0 +1,31 @@
+@import "@/app/styles/utils/variables";
+@import "@/app/styles/utils/media";
+
+.actions {
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 12px;
+  }
+  &__edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 328px;
+    height: 30px;
+    font: 600 13px $font;
+    color: $black;
+    background-color: $btnGray;
+    border-radius: 8px;
+  }
+  &__addUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 30px;
+    background-color: $btnGray;
+    border-radius: 8px;
+  }
+}

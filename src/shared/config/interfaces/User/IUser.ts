@@ -1,3 +1,4 @@
+
 export interface IUser {
   id: number;
   nick: string;
@@ -8,5 +9,5 @@ export interface IUser {
   name: string;
   category: string;
   about: string;
-  links: string;
+  links: string[];
 }

@@ -1,10 +1,19 @@
 import { RouteObject } from "react-router-dom";
 
-import { AccountPage, MainPage, NotFound, UserPage } from "@/pages";
+import {
+  AccountPage,
+  Login,
+  MainPage,
+  NotFound,
+  Registration,
+  UserPage,
+} from "@/pages";
 const routes: RouteObject[] = [
+  { path: "", element: <AccountPage /> },
   { path: "Main", element: <MainPage /> },
   { path: "UserPage", element: <UserPage /> },
-  { path: "AccountPage", element: <AccountPage /> },
   { path: "*", element: <NotFound /> },
+  { path: "login", element: <Login /> },
+  { path: "reg", element: <Registration /> },
 ];
 export default routes;

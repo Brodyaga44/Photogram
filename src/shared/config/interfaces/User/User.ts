@@ -10,5 +10,5 @@ export const User: IUser = {
   name: "Abobus Pro",
   category: "Personal Blog",
   about: "This is first Photogram user!",
-  links: "google.com",
+  links: ["google.com", "aboba.ru"],
 };
