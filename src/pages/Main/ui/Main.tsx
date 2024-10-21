@@ -1,12 +1,12 @@
-import { TestFeature } from "@/features";
+import { Outlet } from "react-router-dom";
+
+import AuthProvider from "@/app/module/providers/AuthProvider.tsx";
 
 const Main = () => {
   return (
-    <div>
-      <div></div>
-      Main Page
-      <TestFeature />
-    </div>
+    <AuthProvider>
+      <Outlet />
+    </AuthProvider>
   );
 };
 

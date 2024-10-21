@@ -5,6 +5,7 @@ import CommentsTab from "@/features/CommentsTab/ui/CommentsTab.tsx";
 import MentionsTab from "@/features/MentionsTab/ui/MentionsTab.tsx";
 import OtherUserHeaderTop from "@/features/OtherUserHeaderTop/ui/OtherUserHeaderTop.tsx";
 import PhotoTab from "@/features/PhotoTab/ui/PhotoTab.tsx";
+import Profile from "@/features/Profile/ui/Profile.tsx";
 import RegForm from "@/features/RegForm/ui/RegForm.tsx";
 import UserHeader from "@/features/UserHeader/ui/UserHeader.tsx";
 import UserHeaderInfo from "@/features/UserHeaderInfo/ui/UserHeaderInfo.tsx";
@@ -22,4 +23,5 @@ export {
   AddLoginForm,
   RegForm,
   OtherUserHeaderTop,
+  Profile,
 };

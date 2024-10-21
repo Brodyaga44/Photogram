@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { ILogUser } from "@/features/AddLoginForm/module/ILogUser.ts";
 import { LogUsers } from "@/features/AddLoginForm/module/LogUsers.ts";
 
 const useAuth = () => {
   const [user, setUser] = useState<ILogUser | null>(null);
-
+  const navigate = useNavigate();
   const login = (data: ILogUser) => {
     if (
       LogUsers.some(
@@ -14,7 +15,8 @@ const useAuth = () => {
     ) {
       setUser(data);
       localStorage.setItem("user", JSON.stringify(data));
-      window.location.href = `http://localhost:5173/`;
+      // window.location.href = `http://localhost:5173/`;
+      navigate("/");
     } else {
       console.log("пасасешь");
     }
