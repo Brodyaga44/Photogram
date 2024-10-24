@@ -1,16 +1,20 @@
+import { useState } from "react";
+
 import styles from "./dropdown.module.scss";
 
 import useOutsideClick from "@/app/module/hooks/useOutsideClick.ts";
 import { IDropdown } from "@/features/Dropdown/module/IDropdown.ts";
 
-const Dropdown = ({ children, open, setOpen, items }: IDropdown) => {
-  const { ref } = useOutsideClick(open, setOpen);
+const Dropdown = ({ children, items }: IDropdown) => {
+  // const [] = useState<boolean>(false);
+  const { ref, open, setOpen } = useOutsideClick(false);
   const handleOpen = () => {
-    setOpen(!open);
+    setOpen(true);
+    console.log("DD open", open);
   };
 
   return (
-    <div ref={ref} className={styles.dropdown} onClick={handleOpen}>
+    <div className={styles.dropdown} onClick={handleOpen} ref={ref}>
       {children}
       {open && (
         <div className={styles.dropdown__content}>

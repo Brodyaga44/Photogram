@@ -1,13 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import { Dispatch, useCallback, useEffect, useRef, useState } from "react";
 
-const useOutsideClick = (open: boolean, setOpen: React.Dispatch<boolean>) => {
+const useOutsideClick = (initialValue: boolean) => {
+  const [open, setOpen] = useState(initialValue);
   const ref = useRef<HTMLDivElement>(null);
 
   const handleClick = (e: MouseEvent) => {
-    const target = e.target as HTMLInputElement;
-    e.preventDefault();
+    const target = e.target as HTMLElement;
+    console.log("h", open);
     if (ref.current && !ref.current.contains(target) && open) {
-      setOpen(false);
+      setOpen(!open);
+      console.log("q", open);
     }
   };
 
@@ -18,7 +20,7 @@ const useOutsideClick = (open: boolean, setOpen: React.Dispatch<boolean>) => {
     };
   }, [open]);
 
-  return { ref };
+  return { ref, open, setOpen };
 };
 
 export default useOutsideClick;
