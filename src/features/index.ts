@@ -2,6 +2,7 @@ import TestFeature from "./TestFeature/TestFeature.tsx";
 
 import AddLoginForm from "@/features/AddLoginForm/ui/AddLoginForm.tsx";
 import CommentsTab from "@/features/CommentsTab/ui/CommentsTab.tsx";
+import Dropdown from "@/features/Dropdown/ui/Dropdown.tsx";
 import MentionsTab from "@/features/MentionsTab/ui/MentionsTab.tsx";
 import OtherUserHeaderTop from "@/features/OtherUserHeaderTop/ui/OtherUserHeaderTop.tsx";
 import PhotoTab from "@/features/PhotoTab/ui/PhotoTab.tsx";
@@ -24,4 +25,5 @@ export {
   RegForm,
   OtherUserHeaderTop,
   Profile,
+  Dropdown,
 };
