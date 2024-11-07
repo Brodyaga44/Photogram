@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import styles from "./dropdown.module.scss";
 
 import useOutsideClick from "@/app/module/hooks/useOutsideClick.ts";

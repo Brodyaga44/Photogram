@@ -1,17 +1,23 @@
 import { RouteObject } from "react-router-dom";
 
-import { AccountPage, Login, NotFound, Registration, UserPage } from "@/pages";
+import {
+  AccountPageDisplay,
+  LoginPageDisplay,
+  NotFound,
+  RegistrationPageDisplay,
+  UserPageDisplay,
+} from "@/pages";
 import Main from "@/pages/Main/ui/Main.tsx";
 const routes: RouteObject[] = [
   {
     path: "",
     element: <Main />,
     children: [
-      { path: "", element: <AccountPage /> },
-      { path: "UserPage", element: <UserPage /> },
+      { path: "", element: <AccountPageDisplay /> },
+      { path: "UserPage", element: <UserPageDisplay /> },
       { path: "*", element: <NotFound /> },
-      { path: "login", element: <Login /> },
-      { path: "reg", element: <Registration /> },
+      { path: "login", element: <LoginPageDisplay /> },
+      { path: "reg", element: <RegistrationPageDisplay /> },
     ],
   },
 ];

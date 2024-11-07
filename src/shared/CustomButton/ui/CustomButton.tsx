@@ -15,7 +15,11 @@ const CustomButton = ({
   return (
     <button
       {...props}
-      className={clsx(styles.btn, styles[`btn__${typeBtn}Type`])}
+      className={clsx(
+        styles.btn,
+        styles[`btn__${typeBtn}Type`],
+        props?.className,
+      )}
     >
       {children}
     </button>

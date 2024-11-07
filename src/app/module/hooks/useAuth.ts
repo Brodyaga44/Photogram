@@ -18,7 +18,7 @@ const useAuth = () => {
       // window.location.href = `http://localhost:5173/`;
       navigate("/");
     } else {
-      console.log("пасасешь");
+      console.log("ошибка");
     }
     console.log("V");
   };

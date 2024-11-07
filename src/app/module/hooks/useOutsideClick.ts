@@ -1,4 +1,4 @@
-import { Dispatch, useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const useOutsideClick = (initialValue: boolean) => {
   const [open, setOpen] = useState(initialValue);
