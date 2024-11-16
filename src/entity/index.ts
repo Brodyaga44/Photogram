@@ -1,5 +1,5 @@
-import AccountActions from "@/entity/AccountActions/ui/AccountActions.tsx";
-import Link from "@/entity/Link/ui/Link.tsx";
-import UserActions from "@/entity/UserActions/ui/UserActions.tsx";
+import UserDescription from "@/entity/UserDescription/ui/UserDescription.tsx";
+import UserHub from "@/entity/UserHub/ui/UserHub.tsx";
+import UserNickBlock from "@/entity/UserNickBlock/ui/UserNickBlock.tsx";
 
-export { AccountActions, Link, UserActions };
+export { UserNickBlock, UserHub, UserDescription };

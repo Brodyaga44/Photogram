@@ -2,28 +2,28 @@ import TestFeature from "./TestFeature/TestFeature.tsx";
 
 import AddLoginForm from "@/features/AddLoginForm/ui/AddLoginForm.tsx";
 import CommentsTab from "@/features/CommentsTab/ui/CommentsTab.tsx";
-import Dropdown from "@/features/Dropdown/ui/Dropdown.tsx";
+import Link from "@/features/Link/ui/Link.tsx";
 import MentionsTab from "@/features/MentionsTab/ui/MentionsTab.tsx";
-import OtherUserHeaderTop from "@/features/OtherUserHeaderTop/ui/OtherUserHeaderTop.tsx";
+import Badge from "@/features/NotificationsCircle/ui/Badge.tsx";
+import OtherUserHeader from "@/features/OtherUserHeader/ui/OtherUserHeader.tsx";
 import PhotoTab from "@/features/PhotoTab/ui/PhotoTab.tsx";
 import Profile from "@/features/Profile/ui/Profile.tsx";
 import RegForm from "@/features/RegForm/ui/RegForm.tsx";
-import UserHeader from "@/features/UserHeader/ui/UserHeader.tsx";
-import UserHeaderInfo from "@/features/UserHeaderInfo/ui/UserHeaderInfo.tsx";
-import UserHeaderTop from "@/features/UserHeaderTop/ui/UserHeaderTop.tsx";
+import UserActionsSelector from "@/features/UserActionsSelector/ui/UserActionsSelector.tsx";
+import UserDropdown from "@/features/UserDropdown/ui/UserDropdown.tsx";
 import VideoTab from "@/features/VideoTab/ui/VideoTab.tsx";
 export {
   TestFeature,
-  UserHeader,
-  UserHeaderInfo,
-  UserHeaderTop,
   PhotoTab,
   CommentsTab,
   VideoTab,
   MentionsTab,
   AddLoginForm,
   RegForm,
-  OtherUserHeaderTop,
+  OtherUserHeader,
   Profile,
-  Dropdown,
+  UserDropdown,
+  UserActionsSelector,
+  Badge,
+  Link,
 };

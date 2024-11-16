@@ -1,10 +1,10 @@
 import styles from "./footer.module.scss";
 
 import { Profile } from "@/features";
-import Add from "@/shared/assets/Footer/Add.svg?react";
-import Explore from "@/shared/assets/Footer/Explore.svg?react";
-import Home from "@/shared/assets/Footer/Home.svg?react";
-import Inbox from "@/shared/assets/Footer/inbox.svg?react";
+import Add from "@/shared/assets/Icons/Add.svg?react";
+import Explore from "@/shared/assets/Icons/Explore.svg?react";
+import Home from "@/shared/assets/Icons/Home.svg?react";
+import Inbox from "@/shared/assets/Icons/inbox.svg?react";
 const Footer = () => {
   return (
     <footer className={styles.footer}>

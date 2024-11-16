@@ -5,6 +5,7 @@ import {
   LoginPageDisplay,
   NotFound,
   RegistrationPageDisplay,
+  UserFollowingDisplay,
   UserPageDisplay,
 } from "@/pages";
 import Main from "@/pages/Main/ui/Main.tsx";
@@ -14,10 +15,11 @@ const routes: RouteObject[] = [
     element: <Main />,
     children: [
       { path: "", element: <AccountPageDisplay /> },
-      { path: "UserPage", element: <UserPageDisplay /> },
+      { path: "userpage", element: <UserPageDisplay /> },
       { path: "*", element: <NotFound /> },
       { path: "login", element: <LoginPageDisplay /> },
       { path: "reg", element: <RegistrationPageDisplay /> },
+      { path: "following", element: <UserFollowingDisplay /> },
     ],
   },
 ];

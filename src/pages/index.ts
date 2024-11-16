@@ -4,6 +4,7 @@ import NotFound from "./NotFound/ui/NotFound.tsx";
 import { AccountPageDisplay } from "@/pages/AccoutPage/ui";
 import { LoginPageDisplay } from "@/pages/Login/ui";
 import { RegistrationPageDisplay } from "@/pages/Registration/ui";
+import { UserFollowingDisplay } from "@/pages/UserFollowing/ui";
 import { UserPageDisplay } from "@/pages/UserPage/ui";
 export {
   NotFound,
@@ -12,4 +13,5 @@ export {
   LoginPageDisplay,
   RegistrationPageDisplay,
   Main,
+  UserFollowingDisplay,
 };

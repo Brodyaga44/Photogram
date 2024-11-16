@@ -1,13 +1,12 @@
-
 export interface IUser {
   id: number;
   nick: string;
   notification: number;
   posts: number;
-  followers: number;
-  following: number;
+  followersCount: number; //budet enum
+  followingCount: number;
   name: string;
-  category: string;
+  category: string; // i eto enum budet
   about: string;
   links: string[];
 }

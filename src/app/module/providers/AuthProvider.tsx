@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from "react";
 
-import AuthContext from "@/app/module/context/AuthContext.ts";
 import useAuth from "@/app/module/hooks/useAuth.ts";
+import AuthContext from "@/shared/context/AuthContext.ts";
 
 const AuthProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const auth = useAuth();

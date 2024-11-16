@@ -5,6 +5,7 @@
   position: sticky;
   bottom: 0;
   border-top: solid $gray 1px;
+  z-index: 1001;
   &__container {
     @include media-mobile {
       width: 100%;

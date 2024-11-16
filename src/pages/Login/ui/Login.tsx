@@ -7,14 +7,8 @@ import { CustomButton } from "@/shared";
 const Login = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    // const url = "localhost:5173";
-    // window.location.href = `${url}`;
-    // return false;
-    // location.pathname = "/reg";
-    // <Navigate to="/reg" />;
-    // <Link to="/reg" />;
-    navigate("/reg");
     console.log("1");
+    navigate("/reg");
   };
   return (
     <div className={styles.login}>

@@ -1,4 +1,4 @@
-import Photo from "@/shared/assets/DashboardPhoto.jpg";
+import Photo from "@/shared/assets/Photos/DashboardPhoto.jpg";
 const PhotoGallery = () => {
   return (
     <div>
