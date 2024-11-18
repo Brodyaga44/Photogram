@@ -1,3 +1,4 @@
 import { lazy } from "react";
 
-export const LoginPageDisplay = lazy(() => import("./Login"));
+const LoginPageDisplay = lazy(() => import("./Login"));
+export { LoginPageDisplay as LoginPage };

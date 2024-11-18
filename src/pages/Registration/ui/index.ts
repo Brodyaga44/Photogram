@@ -1,3 +1,4 @@
 import { lazy } from "react";
 
-export const RegistrationPageDisplay = lazy(() => import("./Registration"));
+const RegistrationPageDisplay = lazy(() => import("./Registration"));
+export { RegistrationPageDisplay as RegistrationPage };

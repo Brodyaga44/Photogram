@@ -1,12 +1,12 @@
 import { RouteObject } from "react-router-dom";
 
 import {
-  AccountPageDisplay,
-  LoginPageDisplay,
+  AccountPage,
+  LoginPage,
   NotFound,
-  RegistrationPageDisplay,
-  UserFollowingDisplay,
-  UserPageDisplay,
+  RegistrationPage,
+  UserFollowingPage,
+  UserPage,
 } from "@/pages";
 import Main from "@/pages/Main/ui/Main.tsx";
 const routes: RouteObject[] = [
@@ -14,12 +14,12 @@ const routes: RouteObject[] = [
     path: "",
     element: <Main />,
     children: [
-      { path: "", element: <AccountPageDisplay /> },
-      { path: "userpage", element: <UserPageDisplay /> },
+      { path: "", element: <AccountPage /> },
+      { path: "userpage", element: <UserPage /> },
       { path: "*", element: <NotFound /> },
-      { path: "login", element: <LoginPageDisplay /> },
-      { path: "reg", element: <RegistrationPageDisplay /> },
-      { path: "following", element: <UserFollowingDisplay /> },
+      { path: "login", element: <LoginPage /> },
+      { path: "reg", element: <RegistrationPage /> },
+      { path: "following", element: <UserFollowingPage /> },
     ],
   },
 ];

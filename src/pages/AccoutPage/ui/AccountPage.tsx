@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+import { tabs } from "../config/tabs.tsx"; // к чему относится? сомневаюсь что виджет
+
 import styles from "./accountpage.module.scss";
 
 import { Tabs } from "@/shared";
 import { User } from "@/shared/config/interfaces/User/User.ts";
 import { UserHeader, UserInfo } from "@/widgets";
 import { Footer, NotificationsDrawer, UserActions } from "@/widgets";
-import { tabs } from "@/widgets/TabData/ui/TabData.tsx"; // к чему относится? сомневаюсь что виджет
 
 const AccountPage = () => {
   const [selectedTab, setSelectedTab] = useState<number>();

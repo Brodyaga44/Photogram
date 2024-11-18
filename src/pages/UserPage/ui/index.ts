@@ -1,3 +1,4 @@
 import { lazy } from "react";
 
-export const UserPageDisplay = lazy(() => import("./UserPage"));
+const UserPageDisplay = lazy(() => import("./UserPage"));
+export { UserPageDisplay as UserPage };
